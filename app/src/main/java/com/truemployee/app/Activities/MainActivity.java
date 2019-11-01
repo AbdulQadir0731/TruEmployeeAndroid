@@ -55,7 +55,7 @@ import okhttp3.Response;
 
 public class MainActivity extends AppCompatActivity {
 
-    EmployeeModel[] employeemodel;
+
     private String mobileNumber = "";
     private Button btnVerify;
     private static final int REQUEST_PHONE_VERIFICATION = 1080;
@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String Phone_Number = "Phone_Number";
     SharedPreferences sharedpreferences;
     public static  String usertype = "";
+    public static  JSONArray DATA_EMP;
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
@@ -74,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();
 
 
-        Places.initialize(getApplicationContext() , AppConstant.apikey);
+
 
 
 
@@ -134,9 +135,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(@NotNull Call call, @NotNull Response response) throws IOException {
                 try {
-                    progressBar.setVisibility(View.INVISIBLE);
-                    signinpage.setVisibility(View.VISIBLE);
-                    employeemodel = (EmployeeModel[]) GsonToModel(response );
+                     DATA_EMP = new JSONArray(response.body().string());
+
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            progressBar.setVisibility(View.INVISIBLE);
+                            signinpage.setVisibility(View.VISIBLE);
+
+                        }
+                    });
+
 
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -167,13 +176,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public  static  Object[] GsonToModel(Response response) throws IOException, JSONException {
-        JSONArray jsonArray = new JSONArray(response.body().string());
-        GsonBuilder gsonBuilder = new GsonBuilder();
-        Gson gson = gsonBuilder.create();
-        Object[] obj = gson.fromJson(jsonArray.toString(), EmployeeModel[].class);
-        return obj;
-    }
+
 
     public boolean checkinternetconnection(){
 

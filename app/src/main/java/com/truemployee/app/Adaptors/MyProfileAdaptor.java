@@ -40,7 +40,7 @@ public class MyProfileAdaptor extends RecyclerView.Adapter<MyProfileAdaptor.MyVi
                                                             int viewType) {
         // create a new view
         LinearLayout v = (LinearLayout) LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.my_text_view, parent, false);
+                .inflate(R.layout.list_item_home, parent, false);
 
         MyViewHolder vh = new MyViewHolder(v);
         return vh;

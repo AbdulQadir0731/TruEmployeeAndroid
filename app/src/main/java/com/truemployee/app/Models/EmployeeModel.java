@@ -1,4 +1,3 @@
-
 package com.truemployee.app.Models;
 
 import java.util.List;
@@ -7,6 +6,12 @@ import com.google.gson.annotations.SerializedName;
 
 public class EmployeeModel {
 
+    @SerializedName("name")
+    @Expose
+    private String name;
+    @SerializedName("avatar")
+    @Expose
+    private String avatar;
     @SerializedName("designation")
     @Expose
     private String designation;
@@ -25,9 +30,25 @@ public class EmployeeModel {
     @SerializedName("cnic")
     @Expose
     private String cnic;
-    @SerializedName("avatar")
+    @SerializedName("city")
     @Expose
-    private String avatar;
+    private String city;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
 
     public String getDesignation() {
         return designation;
@@ -77,12 +98,12 @@ public class EmployeeModel {
         this.cnic = cnic;
     }
 
-    public String getAvatar() {
-        return avatar;
+    public String getCity() {
+        return city;
     }
 
-    public void setAvatar(String avatar) {
-        this.avatar = avatar;
+    public void setCity(String city) {
+        this.city = city;
     }
 
 }

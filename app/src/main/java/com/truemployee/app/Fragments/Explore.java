@@ -7,13 +7,17 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 
-import com.truemployee.app.Adaptors.MyAdaptor;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.truemployee.app.Activities.MainActivity;
+import com.truemployee.app.Adaptors.Home_Adaptor;
 
+import com.truemployee.app.Models.EmployeeModel;
 import com.truemployee.app.R;
 
 
@@ -36,13 +40,16 @@ public class Explore extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_explore, container, false);
         recyclerView = (RecyclerView) view.findViewById(R.id.explore_recycleview);
-        layoutManager = new LinearLayoutManager(getContext());
-        recyclerView.setLayoutManager(layoutManager);
-        LinearLayout[] myDataset = new LinearLayout[10];
 
 
-        mAdapter = new MyAdaptor(getActivity() , myDataset);
-        recyclerView.setAdapter(mAdapter);
+
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        GsonBuilder gsonBuilder = new GsonBuilder();
+        Gson gson = gsonBuilder.create();
+        final EmployeeModel[] propertiesdetails = gson.fromJson(MainActivity.DATA_EMP.toString(), EmployeeModel[].class);
+        recyclerView.setAdapter(new Home_Adaptor(getActivity(), propertiesdetails));
+
+
 
 
 

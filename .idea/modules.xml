@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PhoneVerification/PhoneVerification.iml" filepath="$PROJECT_DIR$/PhoneVerification/PhoneVerification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PhoneVerification/PhoneVerification.iml" filepath="$PROJECT_DIR$/PhoneVerification/PhoneVerification.iml" />
       <module fileurl="file://$PROJECT_DIR$/TruEmployee.iml" filepath="$PROJECT_DIR$/TruEmployee.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TruEmployeeAndroid.iml" filepath="$PROJECT_DIR$/TruEmployeeAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
