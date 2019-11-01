@@ -33,6 +33,9 @@ public class EmployeeModel {
     @SerializedName("city")
     @Expose
     private String city;
+    @SerializedName("description")
+    @Expose
+    private String description;
 
     public String getName() {
         return name;
@@ -104,6 +107,14 @@ public class EmployeeModel {
 
     public void setCity(String city) {
         this.city = city;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
 }

@@ -29,96 +29,49 @@
                 app:cardElevation="50dp">
 
                 <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/Detail_Pic"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
 
+                    android:layout_height="match_parent"
                     android:src="@drawable/profile" />
 
             </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
 
             <TextView
-                android:id="@+id/textView16"
-                android:layout_width="wrap_content"
+                android:id="@+id/Detail_Name"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="8dp"
                 android:hint="Name"
                 android:text="Name"
-
+                android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
                 android:typeface="sans" />
 
             <TextView
-                android:id="@+id/textView17"
-                android:layout_width="wrap_content"
+                android:id="@+id/Detail_Designation"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="8dp"
+                android:textAlignment="center"
                 android:hint="Profession"
                 android:text="Profession Name"
                 android:textSize="12sp" />
 
 
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/Detail_City"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:orientation="horizontal">
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/imageView10"
-                        android:layout_width="wrap_content"
-                        android:layout_height="14dp"
-                        android:layout_gravity="bottom"
-                        android:layout_marginBottom="1dp"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/star" />
-
-
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/textView10"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:layout_marginBottom="1dp"
-                    android:layout_weight="16"
-                    android:text="4.3/5"
-                    android:textSize="10sp" />
-
-
-
-                <TextView
-                    android:backgroundTint="@android:color/transparent"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:layout_marginLeft="10dp"
-                    android:text="DHA"
-                    android:textSize="14sp" />
-
-
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/button7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="@color/colorPrimary"
-                android:textColor="@color/white"
-                android:layout_gravity="center"
-                android:text="Rate" />
+                android:textAlignment="center"
+                android:backgroundTint="@android:color/transparent"
+                android:text="DHA"
+                android:textSize="14sp" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -142,7 +95,7 @@
                         android:textColor="@color/colorPrimary" />
 
                     <TextView
-                        android:id="@+id/editText2"
+                        android:id="@+id/Detail_Description"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@android:color/transparent"
@@ -177,7 +130,7 @@
                         android:textColor="@color/colorPrimary" />
 
                     <TextView
-                        android:id="@+id/textView23"
+                        android:id="@+id/Detail_Experience"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="1 Year" />

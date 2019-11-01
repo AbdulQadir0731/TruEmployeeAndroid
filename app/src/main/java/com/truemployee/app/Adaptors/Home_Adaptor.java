@@ -32,6 +32,7 @@ public class Home_Adaptor extends RecyclerView.Adapter<Home_Adaptor.MyViewHolder
         TextView emp_name;
         TextView emp_designation;
         TextView emp_city;
+        LinearLayout lay;
 
         public MyViewHolder(@Nullable  View itemView) {
             super(itemView);
@@ -40,6 +41,7 @@ public class Home_Adaptor extends RecyclerView.Adapter<Home_Adaptor.MyViewHolder
             emp_name = (TextView) itemView.findViewById(R.id.emp_name);
             emp_designation = (TextView) itemView.findViewById(R.id.designation);
             emp_city = (TextView) itemView.findViewById(R.id.city);
+            lay = (LinearLayout) itemView.findViewById(R.id.parentview);
 
 
         }
@@ -69,7 +71,7 @@ public class Home_Adaptor extends RecyclerView.Adapter<Home_Adaptor.MyViewHolder
 
     // Replace the contents of a view (invoked by the layout manager)
     @Override
-    public void onBindViewHolder(MyViewHolder holder, int position) {
+    public void onBindViewHolder(MyViewHolder holder, final int position) {
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
       //  holder.linearLayout.setBackgroundColor(Color.BLUE);
@@ -81,6 +83,24 @@ public class Home_Adaptor extends RecyclerView.Adapter<Home_Adaptor.MyViewHolder
         holder.emp_name.setText(mDataset[position].getName());
 
         Glide.with(holder.emp_pic.getContext()).load(mDataset[position].getAvatar()).into(holder.emp_pic);
+
+
+        holder.lay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Employee_Detail.Emp_Name = mDataset[position].getName();
+                Employee_Detail.Emp_Description = mDataset[position].getDescription();
+                Employee_Detail.Emp_Designation = mDataset[position].getDesignation();
+                Employee_Detail.Emp_City = mDataset[position].getCity();
+
+                Employee_Detail.Emp_pic = mDataset[position].getAvatar();
+
+
+                Intent intent = new Intent(context , Employee_Detail.class);
+                context.startActivity(intent);
+            }
+        });
 
 
 
