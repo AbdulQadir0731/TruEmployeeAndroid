@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="14"
+
+    >
+
+
+    <EditText
+        android:id="@+id/skilledit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="12"
+        android:backgroundTint="@color/colorPrimary"
+        android:ems="10"
+        android:hint="Skill"
+        android:inputType="text"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="14sp" />
+
+    <ImageButton
+        android:id="@+id/addzipcode"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:tint="@color/colorPrimary"
+        android:src="@drawable/add"
+       />
+
+    <ImageButton
+        android:id="@+id/deletezipcode"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:tint="@color/colorPrimary"
+        android:src="@drawable/delete" />
+
+</LinearLayout>

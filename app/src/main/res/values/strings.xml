@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">TruEmployee</string>
+    <string name="mobile_verification_fails">Mobile Number verification fails.</string>
+
+    <string name="search_now">LETs SEARCH</string>
+    <string name="we_list_over">We list over 150,000 Employees and growing</string>
+    <string name="add_employee">ADD EMPLOYEE</string>
+    <string name="title_activity_home">home</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="explore">EXPLORE</string>
+    <string name="notifications">INBOX</string>
+    <string name="my_profile">PROFILE</string>
+    <string name="more">MORE</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="you_do_not_have_an_account">you do not have an account,</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="full_name">Full Name</string>
+    <string name="cnic_number">CNIC Number</string>
+    <string name="mother_name">Mother Name</string>
+    <string name="you_already_have_an_account">you already have an account</string>
+    <string name="inbox">INBOX</string>
+
+
+    <string-array name="designation">
+        <item>Maids</item>
+        <item>Drivers</item>
+        <item>Cooks</item>
+        <item>Guards</item>
+        <item>Plumbers</item>
+        <item>Plumbers</item>
+        <item>Home Electrician</item>
+        <item>Babysitters</item>
+        <item>Carpenters</item>
+    </string-array>
+
+    <string-array name="cities">
+
+        <item>Lahore</item>
+        <item>Karachi</item>
+        <item>Islamabad</item>
+    </string-array>
+    <string-array name="Education">
+        <item>Primary</item>
+        <item>Secondary</item>
+        <item>Matric</item>
+        <item>Intermediate</item>
+        <item>Under Graduation</item>
+        <item>Graduation</item>
+        <item>Post Graduation</item>
+    </string-array>
+
+    <string name="text_desc"><![CDATA[Who We are We are a team of 11 Wizard Developers who specialise in unique aspects of software development, We work on both mobile & web. Our goal is to work closely with clients to understand their needs and turn their ideas into a real live app. We\'ve worked with clients from Startups, independent businesses, AI and Small Scale Product Based companies and many more and we pride ourselves on using cutting edge technologies to achieve the perfect results for your for project.]]></string>
+    <string name="wallet">WALLET</string>
+
+</resources>

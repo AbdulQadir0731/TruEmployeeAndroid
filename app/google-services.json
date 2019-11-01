@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "554421874434",
+    "firebase_url": "https://truemployee-2406c.firebaseio.com",
+    "project_id": "truemployee-2406c",
+    "storage_bucket": "truemployee-2406c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554421874434:android:698534ecb1e4dc86",
+        "android_client_info": {
+          "package_name": "com.truemployee.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "554421874434-d53bkbu34ssjd4g3vrq287td017sohgt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.truemployee.app",
+            "certificate_hash": "feb76283ec1af4f9916c4571c5648f4acaac669b"
+          }
+        },
+        {
+          "client_id": "554421874434-ljivu4hin212h9d5ccgna195vtrte6v6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBQrG7ueFT3RbTRQrHxM2OCEGsvJzh_mA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "554421874434-ljivu4hin212h9d5ccgna195vtrte6v6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
